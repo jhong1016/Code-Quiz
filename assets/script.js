@@ -59,4 +59,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
         queryElement(element).classList.remove('hide');
     }
 
+    // FUNCTION to reset HTML display for the score
+    var recordsHtmlReset = () => {
+        queryElement('#highScores div').innerHTML = "0";
+        var i = 1;
+        recordsArray.sort((a, b) => b.score - a.score);
+        Array.from(recordsArray).forEach(check => 
+        {
+            var scores = document.createElement("div");
+            scores.innerHTML = i + ". " + check.initialRecord + " - " + check.score;
+            queryElement('#highScores div').appendChild(scores);
+            i = i + 1;
+        });
+        i = 0;
+        Array.from(answers).forEach(answer => {
+            answer.classList.remove('disable');
+        });  
+    }
+
+
 }
