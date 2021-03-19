@@ -33,16 +33,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //1. Setting initial required variables
     const initialTime = 75;
     var time = 75;
-    var sccore = 0;
+    var score = 0;
     var qCount = 0;
     var timeset;
     var answers = document.querySelectorAll('#quizHolder button');
     
     //2. Sets array then if local storage exists it populates it into the array of records
     var recordsArray = [];
-    // Retrieve data if it exists or keepy empty array otherwise
+    // Retrieve data if it exists or keep empty array otherwise
     (localStorage.getItem('recordsArray')) ? recordsArray = JSON.parse(localStorage.getItem('recordsArray')): recordsArray = [];
 
-    
+    // FUNCTIONS MADE TO REDUCE REPEATED CODE //
+
+    // FUNCTION to more quickly call elements less typing means less chance for errors
+    var queryElement = (element) => {
+        return document.querySelector(element);
+    }
+
+    // FUNCTION to hide all sections then unhide the one provided by the parameter
+    var onlyDisplaySection = (element) => {
+        var sections = document.querySelectorAll("section");
+        Array.from(sections).forEach((userItem) => {
+            userItem.classList.add('hide');
+        });
+        queryElement(element).classList.remove('hide');
+    }
 
 }
