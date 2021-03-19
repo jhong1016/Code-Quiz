@@ -97,3 +97,34 @@ button{
 #quizHolder button:hover{
     background-color: #613a8d;
 }
+
+#scoreIndicator, #errorIndicator{
+    border-top: 1px solid #999;
+    color: #41275e;
+    font-size: 1.3em;
+    margin: 0;
+    font-style: italic;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+#scoreIndicator p, #errorIndicator p{
+    margin: 0;
+    margin-top: 10px;
+}
+
+#records input, #records button{
+    margin-top: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.disable{
+    pointer-events: none;
+}
