@@ -26,3 +26,23 @@ var questions = [
     },
 ];
 
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    // SET INITIAL VARIABLES AND SETUP ARRAY/LOCAL STORAGE DATABASE //
+
+    //1. Setting initial required variables
+    const initialTime = 75;
+    var time = 75;
+    var sccore = 0;
+    var qCount = 0;
+    var timeset;
+    var answers = document.querySelectorAll('#quizHolder button');
+    
+    //2. Sets array then if local storage exists it populates it into the array of records
+    var recordsArray = [];
+    // Retrieve data if it exists or keepy empty array otherwise
+    (localStorage.getItem('recordsArray')) ? recordsArray = JSON.parse(localStorage.getItem('recordsArray')): recordsArray = [];
+
+    
+
+}
