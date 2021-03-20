@@ -98,4 +98,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
+    //// QUIZ INITILIZATION AND TIMER ////
+
+    // On intro button click start time and starts giving questions
+    var clock; 
+    queryElement("#intro button").addEventListener("click", (e) => {
+        // Call above function to set initial data in questionHolder section
+        setQuestionData();
+        onlyDisplaySection("#quizHolder");
+        clock = setInterval(myTimer, 1000);
+    });
+    
 }
