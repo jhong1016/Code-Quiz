@@ -117,4 +117,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }, 1000);
     }
 
-}
+    //// QUIZ CONTROLS ////
+
+    // Create an array of selected divs so they can be referred to with the this keyword and replace their values to then check against the answer property for all questions.
+	Array.from(answers).forEach(check => {
+		check.addEventListener('click', function (event) {
+			// Handles events if a question is answered correctly
+			if (this.innerHTML.substring(3, this.length) === questions[qCount].answer) {
+				score = score + 1;
+				qCount = qCount + 1;
+				quizUpdate("Correct");
+			}else{
+				// Handles events if a question is answered incorrectly
+				time = time - 10;
+				qCount = qCount + 1;
+				quizUpdate("Wrong");
+			}
+		});
+	}); 
+
+    
