@@ -108,5 +108,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         onlyDisplaySection("#quizHolder");
         clock = setInterval(myTimer, 1000);
     });
-    
+
+    // Clears timeout if next question is answered before current timeout is reached or if form element has a requirement not met
+    var scoreIndicator = () => {
+        clearTimeout(timeset);
+        timeset = setTimeout(() => {
+            queryElement('#scoreIndicator').classList.add('invisible');
+        }, 1000);
+    }
+
 }
