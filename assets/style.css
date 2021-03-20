@@ -1,46 +1,51 @@
 /* General Styles */
 
-html ,body{
+html ,body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
 }
 
 body {
-    margin:0;
+    margin: 0;
 }
 
-#highScores div div{
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+#highScores div div {
     padding: 5px;
     font-weight: 600;
 }
-
-#highScores div div:nth-child(odd){
+  
+#highScores div div:nth-child(odd) {
     background-color: #efe6f9;
 }
 
-#highScores button{
+#highScores button {
     margin: 5px 0;
 }
 
 /* Section Specific Styles */
 
-#positionWrapper{
+#positionWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: calc(100% - 110px);
 }
 
-section{
+section {
     max-width: 50%;
     margin: 0 auto;
 }
 
-#controls{
+#controls {
     background-color: #41275e;
 }
 
-#info{
+#info {
     max-width: 980px;
     margin: 0 auto;
     color: white;
@@ -51,7 +56,7 @@ section{
     padding: 16px 30px;
 }
 
-#scores{
+#scores {
     /* position:absolute; */
     /* top:16px; */
     left: 40px;
@@ -59,34 +64,34 @@ section{
     color: white;
 }
 
-#timer{
+#timer {
     /* position:absolute; */
     /* top:0; */
     right: 40px;
 }
 
-#intro{
+#intro {
     text-align: center;
 }
 
-button{
+button {
     background-color: #41275e;
     color: white;
-    border: none; 
+    border: none;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#intro button:hover{
+#intro button:hover {
     background-color: #613a8d;
 }
 
-#quizHolder #title{
+#quizHolder #title {
     font-weight: 700;
 }
 
-#quizHolder button{
+#quizHolder button {
     background-color: #41275e;
     border-radius: 5px;
     color: white;
@@ -98,11 +103,11 @@ button{
     text-align: left;
 }
 
-#quizHolder button:hover{
+#quizHolder button:hover {
     background-color: #613a8d;
 }
 
-#scoreIndicator, #errorIndicator{
+#scoreIndicator, #errorIndicator {
     border-top: 1px solid #999;
     color: #41275e;
     font-size: 1.3em;
@@ -112,51 +117,52 @@ button{
     margin: 10px auto;
 }
 
-#scoreIndicator p, #errorIndicator p{
+#scoreIndicator p, #errorIndicator p {
     margin: 0;
     margin-top: 10px;
 }
 
-#records input, #records button{
+#records input, #records button {
     margin-top: 5px;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.invisible{
+.invisible {
     visibility: hidden;
 }
-
-.disable{
-    pointer-events: none;
+  
+.disable {
+  pointer-events: none;
 }
 
 
-@media only screen and (min-midth: 768){
-    #positionWrapper{
+@media only screen and (min-width: 768px) {
+
+    #positionWrapper {
         min-height: calc(100% - 82px);
     }
 
-    #finish #records{
+    #finish #records { 
         display: flex;
         align-items: center;
     }
 
-    #finish #records input, #finish #records button{
+    #finish #records input, #finish #records button {
         margin-left: 10px;
     }
 
-    #info{
+    #info {
         flex-direction: row;
     }
 
-    #quizHolder{
+    #quizHolder {
         min-width: 420px;
     }
 
-    #quizHolder ol{
+    #quizHolder ol {
         min-width: 100%;
     }
 }

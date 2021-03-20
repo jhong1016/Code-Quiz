@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				score = score + 1;
 				qCount = qCount + 1;
 				quizUpdate("Correct");
-			}else{
+			} else {
 				// Handles events if a question is answered incorrectly
 				time = time - 10;
 				qCount = qCount + 1;
