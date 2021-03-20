@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     // Clears timeout if next question is answered before current timeout is reached or if form element has a requirement not met
-	let scoreIndicator = () => {
+	var scoreIndicator = () => {
 		clearTimeout(timeset);
 		timeset = setTimeout(() => {
 		    queryElement('#scoreIndicator').classList.add('invisible');
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Error handling for submitting high scores
 	queryElement("#records button").addEventListener("click", () => {
-	var initialsRecord = queryElement('#initials').value;
+		var initialsRecord = queryElement('#initials').value;
 		if (initialsRecord === ''){
 			queryElement('#errorIndicator p').innerHTML = "You need at least 1 character.";
 			queryElement('#errorIndicator').classList.remove('invisible', errorIndicator());

@@ -6,12 +6,13 @@ This is a quiz application using HTML, CSS, and Javascript. This application emp
 
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link.
 
-**Summary**
+**Features**
 
-HTML and CSS and Javascript documents create a quiz with multiple choice questions with Javascript trivia
-This project emphasizes the use of using Javascript to make dynamic changes to an HMTL document
-This project utilizes the use of appending HTML pages
+* HTML, CSS and Javascript documents create a quiz with multiple choice questions with Javascript trivia;
+* This application emphasises the use of using Javascript to make dynamic changes to an HMTL document; and
+* This application utilizes the use of appending HTML pages.
 
 **Screenshot**
+![Screenshot]()
 
-**Link**
+**Link to Application**
