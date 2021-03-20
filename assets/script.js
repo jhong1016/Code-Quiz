@@ -26,7 +26,7 @@ var questions = [
     },
 ];
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
 
     //// SET INITIAL VARIABLES AND SETUP ARRAY/LOCAL STORAGE DATABASE ////
 
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Create an array of selected divs so they can be referred to with this keyword and replace their values to then check against the answer property for all questions.
 	Array.from(answers).forEach(check => {
-		check.addEventListener('click', function (event) {
+		check.addEventListener('click', function () {
 			// Handles events if a question is answered correctly
 			if (this.innerHTML.substring(3, this.length) === questions[qCount].answer) {
 				score = score + 1;
