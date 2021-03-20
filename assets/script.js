@@ -86,5 +86,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		queryElement('#quizHolder button:nth-of-type(4)').innerHTML = `4. ${questions[qCount].choices[3]}`;
 	}
 
+    // FUNCTION handles time related events for the quiz
+    var myTimer = () => {
+        if (time > 0) {
+            time = time - 1;
+            queryElement('#time').innerHTML = time;
+        } else {
+            clearInterval(clock);
+            queryElement('#score').innerHTML = score;
+            onlyDisplaySection("#finish");
+        }
+    }
 
 }
