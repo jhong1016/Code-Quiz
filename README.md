@@ -6,13 +6,9 @@ This is a quiz application using HTML, CSS, and Javascript. This application emp
 
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link.
 
-**Features**
-
-* HTML, CSS and Javascript documents create a quiz with multiple choice questions with Javascript trivia;
-* This application emphasises the use of using Javascript to make dynamic changes to an HMTL document; and
-* This application utilizes the use of appending HTML pages.
+After clicking "Start Quiz", the user is prompted to complete a 5 question quiz within the 60 second time limit. A wrong answer causes 10 seconds to be deducted, while a correct answer will add an additional 10 seconds to the timer. The user is then able to submit their score, which gets stored to the high scores list.
 
 **Screenshot**
 ![Screenshot]()
 
-**Link to Application**
+**Link to Deployed Application**

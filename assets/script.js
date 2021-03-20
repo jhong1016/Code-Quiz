@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //// SET INITIAL VARIABLES AND SETUP ARRAY/LOCAL STORAGE DATABASE ////
 
     // 1. Setting initial required variables
-    const initialTime = 75;
-    var time = 75;
+    const initialTime = 60;
+    var time = 60;
     var score = 0;
     var qCount = 0;
     var timeset;
