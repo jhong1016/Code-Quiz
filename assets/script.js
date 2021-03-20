@@ -28,9 +28,9 @@ var questions = [
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
-    // SET INITIAL VARIABLES AND SETUP ARRAY/LOCAL STORAGE DATABASE //
+    //// SET INITIAL VARIABLES AND SETUP ARRAY/LOCAL STORAGE DATABASE ////
 
-    //1. Setting initial required variables
+    // 1. Setting initial required variables
     const initialTime = 75;
     var time = 75;
     var score = 0;
@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var timeset;
     var answers = document.querySelectorAll('#quizHolder button');
     
-    //2. Sets array then if local storage exists it populates it into the array of records
+    // 2. Sets array then if local storage exists it populates it into the array of records
     var recordsArray = [];
     // Retrieve data if it exists or keep empty array otherwise
     (localStorage.getItem('recordsArray')) ? recordsArray = JSON.parse(localStorage.getItem('recordsArray')): recordsArray = [];
 
-    // FUNCTIONS MADE TO REDUCE REPEATED CODE //
+    //// FUNCTIONS MADE TO REDUCE REPEATED CODE ////
 
     // FUNCTION to more quickly call elements less typing means less chance for errors
     var queryElement = (element) => {
@@ -76,6 +76,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
             answer.classList.remove('disable');
         });  
     }
+
+    // FUNCTION to set the question data in questionHolder section
+    var setQuestionData = () => {
+		queryElement('#quizHolder p').innerHTML = questions[qCount].title;
+		queryElement('#quizHolder button:nth-of-type(1)').innerHTML = `1. ${questions[qCount].choices[0]}`;
+		queryElement('#quizHolder button:nth-of-type(2)').innerHTML = `2. ${questions[qCount].choices[1]}`;
+		queryElement('#quizHolder button:nth-of-type(3)').innerHTML = `3. ${questions[qCount].choices[2]}`;
+		queryElement('#quizHolder button:nth-of-type(4)').innerHTML = `4. ${questions[qCount].choices[3]}`;
+	}
 
 
 }
