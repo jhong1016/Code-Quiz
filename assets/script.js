@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		onlyDisplaySection("#intro");
 	});
 
-	// If a player pushes the view high scores button in the html view then this abdandons all quiz progress and lets them view the high scores
+	// If a player pushes the view high scores button in the html view then this abandons all quiz progress and lets them view the high scores
 	queryElement("#scores").addEventListener("click", (e) => {
 		e.preventDefault();
 		clearInterval(clock);
