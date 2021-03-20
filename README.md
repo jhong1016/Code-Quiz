@@ -15,6 +15,6 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * At the top left corner, users can click to view the score leaderboard.
 
 **Screenshot**
-![Screenshot](https://github.com/jhong1016/Code-Quiz/blob/main/assets/Screenshot.JPG)
+![Screenshot](https://github.com/jhong1016/Code-Quiz/blob/main/assets/screenshot.JPG)
 
 **Link to Deployed Application**
