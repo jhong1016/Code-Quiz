@@ -135,7 +135,7 @@ button {
 }
   
 .disable {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 
