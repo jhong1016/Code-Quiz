@@ -18,6 +18,16 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 ![Screenshot](https://github.com/jhong1016/Code-Quiz/blob/main/assets/Screenshot.JPG)
 
+![Screenshot](https://github.com/jhong1016/Code-Quiz/blob/main/assets/screenshot2codingquizchallenge.JPG) 
+
 **Link to Deployed Application**
 
 https://jhong1016.github.io/Code-Quiz/
+
+**Technologies Used**
+
+HTML / CSS / JAVASCRIPT
+
+**License**
+
+USYD Coding Bootcamp
