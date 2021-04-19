@@ -21,3 +21,11 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 **Link to Deployed Application**
 
 https://jhong1016.github.io/Code-Quiz/
+
+**Technologies Used**
+
+HTML / CSS / JAVASCRIPT
+
+**License**
+
+USYD Coding Bootcamp
